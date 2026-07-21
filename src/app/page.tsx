@@ -1,31 +1,31 @@
-"use client";
-
-import { Header } from "@/components/site/header";
-import { Hero } from "@/components/site/hero";
-import { LiveDemo } from "@/components/site/live-demo";
-import { BeforeAfter } from "@/components/site/before-after";
-import { Benefits } from "@/components/site/benefits";
-import { Services } from "@/components/site/services";
-import { Cta } from "@/components/site/cta";
-import { useI18n } from "@/modules/i18n";
+import { AudienceSelector } from "@/components/site/audience-selector";
+import { CompanySection } from "@/components/site/company-section";
+import { ContactSection } from "@/components/site/contact-section";
+import { EfficiencyCalculator } from "@/components/site/efficiency-calculator";
+import { HeroStatic } from "@/components/site/hero-static";
+import { ProcessSection } from "@/components/site/process-section";
+import { ProjectsSection } from "@/components/site/projects-section";
+import { ScenarioExplorer } from "@/components/site/scenario-explorer";
+import { SiteFooter } from "@/components/site/site-footer";
+import { SiteHeader } from "@/components/site/site-header";
+import { SolutionsGrid } from "@/components/site/solutions-grid";
+import { StaticComparison } from "@/components/site/static-comparison";
 
 export default function Home() {
-  const { t } = useI18n();
   return (
     <main>
-      <Header />
-      <Hero />
-      <LiveDemo />
-      <BeforeAfter />
-      <Benefits />
-      <Services />
-      <Cta />
-      <footer className="border-t border-[var(--line)] py-8">
-        <div className="site-shell flex flex-wrap items-center justify-between gap-4 text-xs font-bold text-[var(--muted)]">
-          <span>{t("footer.note")}</span>
-          <span>© {new Date().getFullYear()}</span>
-        </div>
-      </footer>
+      <SiteHeader />
+      <HeroStatic />
+      <AudienceSelector />
+      <ScenarioExplorer />
+      <EfficiencyCalculator />
+      <StaticComparison />
+      <SolutionsGrid />
+      <ProcessSection />
+      <ProjectsSection />
+      <CompanySection />
+      <ContactSection />
+      <SiteFooter />
     </main>
   );
 }

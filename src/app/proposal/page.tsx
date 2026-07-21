@@ -1,5 +1,5 @@
-import { ProposalBuilder } from "@/modules/proposal/proposal-builder";
+import { redirect } from "next/navigation";
 
 export default function ProposalPage() {
-  return <ProposalBuilder />;
+  redirect("/admin/proposal");
 }
