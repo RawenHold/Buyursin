@@ -436,7 +436,7 @@ function ProjectAccordion({ projects, locale = "ru" }: { projects: readonly Port
 
   const activeTitle = locale === "ru" ? activeProject.title : activeProject.titleUz;
   const labels = locale === "ru"
-    ? { region: "Карусель проектов", type: activeProject.type, profile: "Профиль решения", all: "Проекты", next: "Следующий проект", playing: "Автопрокрутка", pause: "Остановить автопрокрутку", play: "Запустить автопрокрутку", visual: "Архитектурная AI-визуализация. Состав кейса подтверждается перед публикацией." }
+    ? { region: "Карусель проектов", type: activeProject.type, profile: "Профиль решения", all: "Проекты", next: "Следующий проект", playing: "Автопрокрутка", pause: "Остановить автопрокрутку", play: "Запустить автопрокрутку"}
     : { region: "Loyihalar karuseli", type: activeProject.typeUz, profile: "Yechim profili", all: "Loyihalar", next: "Keyingi loyiha", playing: "Avto aylantirish", pause: "Avto aylantirishni to‘xtatish", play: "Avto aylantirishni ishga tushirish", visual: "Arxitektura AI-vizualizatsiyasi. Keys tarkibi nashrdan oldin tasdiqlanadi." };
 
   return <div
